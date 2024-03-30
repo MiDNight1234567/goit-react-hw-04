@@ -1,0 +1,12 @@
+.gallery {
+  width: 1320px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 15px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.galleryItem {
+  flex-basis: calc((100% - 45px) / 4);
+}

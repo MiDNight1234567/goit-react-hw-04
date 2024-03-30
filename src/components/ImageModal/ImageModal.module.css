@@ -1,0 +1,47 @@
+.Overlay {
+  position: fixed;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.Modal {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  border: none;
+  background: transparent;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vh;
+  max-height: 100vh;
+  transition: all 0.2s ease-in-out;
+}
+
+.modalContainer {
+  background-color: hsla(210, 3%, 14%, 0.7);
+}
+
+.image {
+  max-width: 100%;
+  max-height: 80vh;
+  margin: 0 auto;
+}
+
+.imageInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 5px;
+}
+
+.imageDescr {
+  color: antiquewhite;
+  margin: 0;
+}
+
+.imageSpan {
+  font-weight: 600;
+}

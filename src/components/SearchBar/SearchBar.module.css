@@ -1,0 +1,37 @@
+.header {
+  background-color: #564b52;
+  padding: 20px 40px;
+  border-radius: 12px;
+  width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.headerForm {
+  display: flex;
+  width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+
+.headerFormBtn {
+  color: #403c3cde;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+
+.formSvg {
+  vertical-align: middle;
+}
+
+.headerInput {
+  font-size: 18px;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #403c3cde;
+  background-color: transparent;
+}

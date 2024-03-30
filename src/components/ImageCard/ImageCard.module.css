@@ -1,0 +1,27 @@
+.imageCard {
+  width: 310px;
+  background-color: hsl(300, 2%, 34%);
+  transition: transform 250ms ease-in-out;
+  border-bottom: 1px solid antiquewhite;
+}
+
+.imageCard:hover,
+.imageCard:focus {
+  transform: scale(1.03);
+}
+
+.imageDescrWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.imageDescr {
+  margin: 0;
+  font-size: 12px;
+  color: antiquewhite;
+}
+
+.imageSpan {
+  font-weight: 600;
+}
