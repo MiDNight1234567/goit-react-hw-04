@@ -1,27 +1,28 @@
 import css from "./ImageCard.module.css";
-const ImageCard = ({ image, onImageClick }) => {
+
+const ImageCard = ({ img, onImageClick }) => {
   const imageData = {
-    imageSrc: image.urls.regular,
-    imageAltDescription: image.alt_description,
-    imageDescription: image.description,
-    imageAutor: image.user.name,
-    imageLikes: image.likes,
+    imageSrc: img.urls.regular,
+    imageAltDescription: img.alt_description,
+    imageDescription: img.description,
+    imageAutor: img.user.name,
+    imageLikes: img.likes,
   };
 
   return (
     <div className={css.imageCard} onClick={() => onImageClick(imageData)}>
       <img
-        src={image.urls.small}
-        alt={image.alt_description}
+        src={img.urls.small}
+        alt={img.alt_description}
         width={310}
         height={200}
       />
       <div className={css.imageDescrWrap}>
         <p className={css.imageDescr}>
-          Author: <span className={css.imageSpan}>{image.user.name}</span>
+          Author: <span className={css.imageSpan}>{img.user.name}</span>
         </p>
         <p className={css.imageDescr}>
-          Likes: <span className={css.imageSpan}>{image.likes}</span>
+          Likes: <span className={css.imageSpan}>{img.likes}</span>
         </p>
       </div>
     </div>
